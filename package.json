@@ -1,0 +1,19 @@
+{
+  "name": "calendar",
+  "version": "1.0.0",
+  "description": "calendar",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sdntmn/calendar.git"
+  },
+  "author": "sdntmn",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sdntmn/calendar/issues"
+  },
+  "homepage": "https://github.com/sdntmn/calendar#readme"
+}
