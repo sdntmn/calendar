@@ -1,0 +1,84 @@
+.controlMonth {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  margin: 12px;
+  max-height: 48px;
+}
+.controlMonth__button-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  max-width: 220px;
+  width: 100%;
+}
+.controlMonth__button-icon {
+  margin: 0;
+  padding: 2px 6px;
+  max-width: 32px;
+  width: 100%;
+  max-height: 24px;
+  background-color: var(--light-100);
+  background-image: cover;
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+}
+.controlMonth__button-icon-arrow {
+  padding: 0;
+  margin: 0;
+  -webkit-mask-image: url("../images/icons_arrow-large.svg");
+  mask-image: url("../images/icons_arrow-large.svg");
+  background-color: var(--dark-100);
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+
+  width: 20px;
+  height: 20px;
+}
+.controlMonth__text {
+  font-family: var(--font-family);
+  color: var(--dark-200);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+.controlMonth__extra-button {
+  margin: auto 0;
+  padding: 0;
+  margin-left: 10px;
+  background: var(--light-100);
+  -webkit-box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: inset 0px 0px 1px 1px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+  max-width: 59px;
+  width: 100%;
+  cursor: pointer;
+}
+.controlMonth__button-title {
+  padding: 2px 6px;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: var(--dark-200);
+}

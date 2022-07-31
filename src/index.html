@@ -4,17 +4,309 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500&&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
     <title>Calendar</title>
   </head>
   <body>
-    <header class="control">
-      <div class="control__buttons">
-        <button type="button" class="control__button">Добавить</button>
-        <button type="button" class="control__button">Обновить</button>
-      </div>
-      <div></div>
-      <div></div>
-    </header>
-    <main class="main"></main>
+    <div class="app">
+      <header class="header">
+        <div class="header__wrapper">
+          <div class="header__control">
+            <div class="header__control-buttons">
+              <button type="button" class="header__main-button">
+                Добавить
+              </button>
+              <button type="button" class="header__main-button">
+                Обновить
+              </button>
+            </div>
+
+            <div class="header__input-area">
+              <div class="header__icon"></div>
+              <input
+                type="text"
+                class="header__input"
+                placeholder="Placeholder"
+              />
+            </div>
+          </div>
+        </div>
+      </header>
+      <main class="main">
+        <div class="main__section">
+          <section class="controlMonth">
+            <div class="controlMonth__button-wrap">
+              <button type="button" class="controlMonth__button-icon">
+                <svg
+                  class="controlMonth__button-icon-arrow app__rotation"
+                ></svg>
+              </button>
+              <span class="controlMonth__text">Ноябрь 2021</span>
+              <button type="button" class="controlMonth__button-icon">
+                <svg class="controlMonth__button-icon-arrow"></svg>
+              </button>
+            </div>
+            <button class="controlMonth__extra-button" type="button">
+              <span class="controlMonth__button-title">Сегодня</span>
+            </button>
+          </section>
+          <section class="table">
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">Понедельник, 27 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">Вторник, 28 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">Среда, 29 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell cell_background">
+              <div class="cell__wrap">
+                <span class="cell__heading">Четверг, 30 </span>
+                <span class="cell__heading cell__title">Шашлыки</span>
+                <span class="cell__heading"
+                  >Филипп Коров, Дмитрий Табасков</span
+                >
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">Пятница, 1 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">Суббота, 2 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">Воскресенье, 3 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">4 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">5 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">6 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">7 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">8 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">9 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">10 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">11 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">12 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">13 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">14 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell cell_background">
+              <div class="cell__wrap">
+                <span class="cell__heading">15 </span>
+                <span class="cell__heading cell__title">Летний лагерь</span>
+                <span class="cell__heading">Алексей Маральный</span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">16 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">17 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell cell_background">
+              <div class="cell__wrap">
+                <span class="cell__heading">18 </span>
+                <span class="cell__heading cell__title">Аква кутеж</span>
+                <span class="cell__heading">
+                  Михаил Шустин, Владимир Пупкин, Дмитрий Медев
+                </span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">19 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">20 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">21 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">22 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">23 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">24 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">25 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">26 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">27 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">28 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">29 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">30 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+            <div class="cell">
+              <div class="cell__wrap">
+                <span class="cell__heading">31 </span>
+                <span class="cell__heading cell__title"></span>
+                <span class="cell__heading"></span>
+              </div>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>

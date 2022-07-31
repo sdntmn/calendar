@@ -1,0 +1,56 @@
+.cell {
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  border-bottom: 1px solid var(--dark-200);
+  border-right: 1px solid var(--dark-200);
+  padding: 7.5px;
+}
+
+.cell_background {
+  background: var(--blue-100);
+}
+.cell__wrap {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 16px 7px 16px 7px 1fr;
+  grid-template-rows: 16px 16px 1fr;
+  -ms-grid-columns: 100%;
+  grid-template-columns: 100%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  row-gap: 7px;
+  padding: 0;
+}
+.cell__wrap > *:nth-child(1) {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+}
+.cell__wrap > *:nth-child(2) {
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+}
+.cell__wrap > *:nth-child(3) {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+}
+.cell__heading {
+  margin: 0;
+  padding: 0;
+  max-height: 56px;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+  white-space: normal;
+  overflow: hidden;
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--dark-100);
+}
+.cell__title {
+  color: var(--dark-200);
+}

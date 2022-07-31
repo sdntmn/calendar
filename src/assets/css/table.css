@@ -1,0 +1,11 @@
+.table {
+  margin: 0 12px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr 0 1fr;
+  grid-template-columns: repeat(7, 1fr);
+  grid-auto-rows: minmax(120px, auto);
+  gap: 0;
+  border-top: 1px solid var(--dark-200);
+  border-left: 1px solid var(--dark-200);
+}

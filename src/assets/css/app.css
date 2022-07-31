@@ -1,0 +1,16 @@
+.app {
+  margin: 0 auto;
+  padding: 0;
+  background-color: #fff;
+  min-height: 100vh;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px 1fr;
+  grid-template-rows: 100px 1fr;
+  width: 100%;
+}
+.app__rotation {
+  -webkit-transform: rotate(-180deg);
+  -ms-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
