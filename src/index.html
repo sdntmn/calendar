@@ -17,7 +17,7 @@
         <div class="header__wrapper">
           <div class="header__control">
             <div class="header__control-buttons">
-              <button type="button" class="header__main-button">
+              <button type="button" class="header__main-button" id="quick_add">
                 Добавить
               </button>
               <button type="button" class="header__main-button">
@@ -28,7 +28,7 @@
             <div class="header__input-area">
               <div class="header__icon"></div>
               <input
-                type="text"
+                type="search"
                 class="header__input"
                 placeholder="Placeholder"
               />
@@ -54,8 +54,9 @@
               <span class="controlMonth__button-title">Сегодня</span>
             </button>
           </section>
+
           <section class="table">
-            <div class="cell">
+            <div class="cell" id="1">
               <div class="cell__wrap">
                 <span class="cell__heading">Понедельник, 27 </span>
                 <span class="cell__heading cell__title"></span>
@@ -120,7 +121,7 @@
                 <span class="cell__heading"></span>
               </div>
             </div>
-            <div class="cell">
+            <div class="cell" id="6">
               <div class="cell__wrap">
                 <span class="cell__heading">6 </span>
                 <span class="cell__heading cell__title"></span>
@@ -307,6 +308,112 @@
           </section>
         </div>
       </main>
+      <div class="popup" id="popup_form_add">
+        <div class="popup__container">
+          <form name="popup__form">
+            <button
+              class="popup__close"
+              type="button"
+              aria-label="Кнопка закрытия формы"
+            ></button>
+
+            <input
+              class="popup__input popup__input_value_mesto"
+              required
+              placeholder="Событие"
+              type="text"
+              name="name"
+              value=""
+            />
+            <input
+              class="popup__input popup__input_value_link"
+              required
+              placeholder="День, месяц, год"
+              type="text"
+              name="link"
+              value=""
+            />
+            <input
+              class="popup__input popup__input_value_link"
+              required
+              placeholder="Имена участников"
+              type="text"
+              name="link"
+              value=""
+            />
+            <textarea
+              class="popup__input-textarea popup__input_value_link"
+              required
+              placeholder="Описание"
+              type="text"
+              name="link"
+              value=""
+            ></textarea>
+
+            <button
+              class="controlMonth__extra-button popup_controlMonth"
+              type="button"
+            >
+              <span class="controlMonth__button-title popup_controlMonth"
+                >Готово</span
+              >
+            </button>
+
+            <button class="controlMonth__extra-button" type="button">
+              <span class="controlMonth__button-title">Удалить</span>
+            </button>
+          </form>
+        </div>
+      </div>
+
+      <div class="popup" id="popup_quick_add">
+        <div class="popup__container">
+          <form name="popup__quick_add">
+            <button
+              class="popup__close"
+              type="button"
+              aria-label="Кнопка закрытия формы"
+            ></button>
+
+            <input
+              class="popup__input popup__input_value_mesto"
+              required
+              placeholder="25 ноября, Кутеж, Серж"
+              type="text"
+              name="name"
+              value=""
+            />
+
+            <button
+              class="controlMonth__extra-button popup_controlMonth"
+              type="button"
+            >
+              <span class="controlMonth__button-title popup_controlMonth"
+                >Создать</span
+              >
+            </button>
+          </form>
+        </div>
+      </div>
     </div>
+    <script>
+      const btnOpenPopupFormAdd = document.getElementById("popup_form_add");
+      const btnOpenPopupQuickAdd = document.getElementById("quick_add");
+      const popupQuickAdd = document.getElementById("popup_quick_add");
+      const show = document.getElementById("6");
+
+      function openPopup(popup) {
+        popup.classList.toggle("popup_is-opened");
+      }
+
+      show.addEventListener("click", () => {
+        openPopup(btnOpenPopupFormAdd);
+      });
+
+      btnOpenPopupQuickAdd.addEventListener("click", () => {
+        console.log(2);
+        openPopup(popupQuickAdd);
+      });
+    </script>
   </body>
 </html>

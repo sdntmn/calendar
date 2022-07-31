@@ -1,0 +1,110 @@
+.popup {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  max-width: 290.32px;
+  max-height: 315px;
+  background: var(--light-100);
+  filter: drop-shadow(0px 0px 7px rgba(0, 0, 0, 0.25));
+
+  top: 269px;
+  left: calc(((100vw - 1024px + 24px) / 2) + 438px);
+  z-index: 10;
+  transition: visibility 1s, opacity 1s;
+  visibility: visible;
+  opacity: 0;
+}
+
+.popup::before {
+  content: "";
+  position: absolute;
+  background: url("../images/decorate.svg") no-repeat;
+  fill-opacity: 0.5;
+  top: 9px;
+  left: -10px;
+  width: 24px;
+  height: 24px;
+}
+
+#popup_quick_add {
+  top: 89px;
+  left: calc(((100vw - 1024px + 24px) / 2));
+}
+
+#popup_quick_add::before {
+  top: -10px;
+  left: 23px;
+  transform: rotate(90deg);
+}
+
+.popup_is-opened {
+  visibility: visible;
+  opacity: 1;
+  z-index: 1;
+}
+
+.popup__container {
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  margin: 0 12px 12px;
+}
+
+.popup__close {
+  background-size: cover;
+  background: url(../images/icons_cross-small.svg) right no-repeat;
+  background-color: transparent;
+  cursor: pointer;
+  margin: 0 auto;
+  padding: 0;
+  border: none;
+
+  width: 100%;
+  height: 8px;
+  transition: 1s;
+  text-align: center;
+  align-content: center;
+}
+
+.popup__input {
+  width: 100%;
+  padding: 6px 0;
+  padding-left: 12px;
+  padding-right: 12px;
+  margin: 8px 0 0;
+  border: none;
+  background: var(--light-100);
+  outline: 1px solid var(--neutral-200);
+  box-shadow: inset 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  max-height: 28px;
+}
+
+.popup__input-textarea::placeholder {
+  font-family: var(--font-family);
+  font-style: normal;
+  font-weight: 300;
+  font-size: 14px;
+  line-height: 16px;
+  color: var(--neutral-200);
+}
+
+.popup__input-textarea {
+  width: 100%;
+  padding: 6px 12px;
+  margin: 24px 0 0;
+  background: var(--light-100);
+  outline: 1px solid var(--neutral-200);
+  box-shadow: inset 0px 0px 1px 2px rgba(0, 0, 0, 0.25);
+  border-radius: 4px;
+  border: none;
+  resize: none;
+  max-height: 125px;
+  min-height: 125px;
+}
+
+.popup_controlMonth {
+  margin-left: 0;
+  margin-top: 4px;
+  width: max-content;
+}
